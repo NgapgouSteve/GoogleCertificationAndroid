@@ -1,0 +1,7 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">GoogleCertification</string>
+    <string name="countdown"> <xliff:g example="5 jours" id="time"> % 1 $ s </xliff:g>jusquau jour</string>
+    <string name="simple_notification">simple notification</string>
+    <string name="update_notification">Update notification</string>
+    <string name="cancel_notification">Cancel notification</string>
+</resources>
