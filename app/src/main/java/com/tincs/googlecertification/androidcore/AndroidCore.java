@@ -16,7 +16,7 @@ import com.tincs.googlecertification.R;
 
 public class AndroidCore extends AppCompatActivity implements View.OnClickListener{
 
-    TextView custom_toast, snackbar, notifications;
+    TextView custom_toast, snackbar, notifications, job_sheduler;
 
     @Override
     public void onBackPressed() {
@@ -32,10 +32,12 @@ public class AndroidCore extends AppCompatActivity implements View.OnClickListen
         custom_toast = findViewById(R.id.custom_toast);
         snackbar = findViewById(R.id.snackbar);
         notifications = findViewById(R.id.notifications);
+        job_sheduler = findViewById(R.id.job_sheduler);
 
         custom_toast.setOnClickListener(this);
         snackbar.setOnClickListener(this);
         notifications.setOnClickListener(this);
+        job_sheduler.setOnClickListener(this);
     }
 
     // here is the method that enable you to display custom toast
@@ -74,6 +76,7 @@ public class AndroidCore extends AppCompatActivity implements View.OnClickListen
             case R.id.custom_toast: customToast();break;
             case R.id.snackbar: showSnackBar();break;
             case R.id.notifications: startActivity(new Intent(getApplicationContext(), NotifActivity.class));break;
+            case R.id.job_sheduler: startActivity(new Intent(getApplicationContext(), NotifSheduler.class)); break;
         }
     }
 }
